@@ -76,3 +76,41 @@ header p{
 .intro-header-container > p:first-child {
     margin-bottom: 24px;
 }
+
+main {
+    height: 100%;
+    padding: 16px 0 0 24px;
+}
+
+.form-field-container {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:14px
+}
+
+.form-field {
+    width: 150px;
+    font-size: 0.6em;
+    font-weight:600;
+    color: rgb(129, 126, 126);
+}
+
+.form-field input{
+    margin-top: 2px;
+}
+
+.form-field:nth-child(odd){
+    margin-right: 64px;
+}
+
+input {
+    width: 150px;
+    height: 12px;
+}
+
+main > p {
+    margin: 0 0 16px 0;
+    font-weight: 600;
+    color: rgb(53, 53, 53);
+}
