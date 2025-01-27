@@ -10,4 +10,4 @@ An HTML form for signing up for a tree-planting event on World Forest Day. This 
 - Gained a deeper understanding of CSS.  
 
 `Author`  
-[Amal Krishna S](www.linkedin.com/in/amalkrishnas)
+[Amal Krishna S](https://www.linkedin.com/in/amalkrishnas)
