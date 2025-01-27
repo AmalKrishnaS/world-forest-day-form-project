@@ -2,6 +2,7 @@ html, body {
     margin:0;
     padding:0;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
 }
 
 @font-face {
@@ -22,7 +23,9 @@ html, body {
 
 .content-container {
     width:550px;
-    height:100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .background-image > img:first-child {
@@ -57,20 +60,19 @@ html, body {
 
 header {
     width: 100%;
-    height: 260px;
     background-color: whitesmoke;
 }
 
 header p{
     margin: 0px;
-    font-size: 0.9em;
+    font-size: 0.85em;
     font-weight: bold;
     font-style: italic;
 }
 
 .intro-header-container {
     padding-top: 130px;
-    padding-left: 24px;
+    padding: 64px 24px 24px;
 }
 
 .intro-header-container > p:first-child {
@@ -78,15 +80,19 @@ header p{
 }
 
 main {
-    height: 100%;
-    padding: 16px 0 0 24px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
 }
 
 .form-field-container {
     width: 400px;
+    padding: 16px 0 0 24px;
     display: flex;
     flex-wrap: wrap;
-    gap:14px
+    gap:14px;
+    padding-bottom: 16px;
 }
 
 .form-field {
@@ -110,7 +116,49 @@ input {
 }
 
 main > p {
-    margin: 0 0 16px 0;
+    margin: 16px 0 16px 24px;
     font-weight: 600;
     color: rgb(53, 53, 53);
 }
+
+.page-content-container {
+    width: 900px;
+    height: 100vh;
+    display:flex;
+}
+
+.form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;   
+}
+
+.submit-button-container {
+    padding: 16px 0 0 24px;
+    flex: 1;
+    background-color: whitesmoke;
+    box-shadow: inset 0 5px 8px -5px rgba(0, 0, 0, 0.2);
+}
+
+.submit-button-container p {
+    font-size: 0.7em;
+    font-weight: bold;
+    margin-top: 16px;
+}
+
+button {
+    border: 0;
+    padding: 10px 32px;
+    border-radius: 6px;
+    font-size: 0.7em;
+    color: white;
+    font-weight: bold;
+    background-color: #596D48;
+}
+
+a {
+    color: #596D48;
+    text-decoration: none;
+}
+
+
