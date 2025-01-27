@@ -103,16 +103,19 @@ main {
 }
 
 .form-field input{
-    margin-top: 2px;
+    margin: 2px 0 0 0;
+    padding: 2.5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #596D48;
+    border: 1px solid black;
+    border-radius: 2px;
+    width: 150px;
+    height: 12px;
 }
 
 .form-field:nth-child(odd){
     margin-right: 64px;
-}
-
-input {
-    width: 150px;
-    height: 12px;
 }
 
 main > p {
@@ -161,4 +164,15 @@ a {
     text-decoration: none;
 }
 
+input:focus {
+    border: 1px solid blue;
+    border-radius: 2px;
+    outline: none;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
 
+input[type="password"]:invalid {
+    border: 1px solid red;
+    border-radius: 2px;
+    outline: none;
+}
